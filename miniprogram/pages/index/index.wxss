@@ -1,25 +1,44 @@
-.top{
-  background: #3a4861;
+swiper{
+  height: 520rpx;
+}
+swiper image{
   width: 100%;
-  padding: 30rpx 0;
-
 }
 
-.top .user-img{
-  width: 252rpx;
-  margin: 0 auto;
+.grids {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.top image{
-  width: 252rpx;
-  height: 252rpx;
-  border-radius: 50%;
-  border: 6rpx solid #777f92;
+.grids .item{
+  width: 250rpx;
+  height: 250rpx;
+  border-right: 1rpx solid #eee;
+  border-bottom: 1rpx solid #eee;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.menu .item{
-  height: 96rpx;
-  line-height: 96rpx;
-  border-bottom: 2rpx solid #ccc;
+.grids .item:nth-child(3){
+  border-right: 0;
+}
+.grids .item:nth-child(6){
+  border-right: 0;
+}
+.grids .item:nth-child(9){
+  border-right: 0;
 }
 
+.grids .item image{
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.grids .item text{
+  color: #999;
+  font-size: 28rpx;
+  margin-top: 20rpx;
+}
